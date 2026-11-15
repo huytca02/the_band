@@ -9,6 +9,17 @@ html {
     font-family: "Lato", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
 /* 
 1. Làm từ trên xuống dưới
 2. Làm từ trong ra ngoài
@@ -33,6 +44,7 @@ html {
     right: 0;
     height: 46px;
     background-color: #000;
+    z-index: 99;
 }
 
 #nav {
@@ -152,5 +164,42 @@ html {
 
 
 #content {}
+
+#content .content-section {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+#content .section-heading {
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+#content .section-sub-heading {
+    opacity: 0.6;
+}
+
+
+#content .about-text {
+    text-align: justify;
+}
+
+#content .section-heading,
+.section-sub-heading {
+    text-align: center;
+}
+
+#content .section-sub-heading,
+.about-text {
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
 
 #footer {}
