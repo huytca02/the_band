@@ -125,6 +125,7 @@ h6 {
 #header .search-btn {
     float: right;
     padding: 0 20px;
+    font-size: 15px;
 }
 
 #header .search-btn:hover {
@@ -201,5 +202,29 @@ h6 {
     font-size: 15px;
     line-height: 1.5;
 }
+
+#content .member-list {
+    width: 100%;
+    padding: 32px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+#content .member-item {
+    float: left;
+}
+
+#content .member-name {
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#content .member-avatar {
+    width: 60%;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+
 
 #footer {}
