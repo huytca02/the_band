@@ -20,6 +20,10 @@ h6 {
     margin: 10px 0;
 }
 
+.text-white {
+    color: #ffffff !important;
+}
+
 /* 
 1. Làm từ trên xuống dưới
 2. Làm từ trong ra ngoài
@@ -191,6 +195,12 @@ h6 {
     text-align: justify;
 }
 
+
+.tour-section {
+    width: 100vw;
+    background-color: #000;
+}
+
 #content .section-heading,
 .section-sub-heading {
     text-align: center;
@@ -224,6 +234,38 @@ h6 {
     width: 60%;
     margin-bottom: 16px;
     border-radius: 4px;
+}
+
+.ticket-list {
+    margin-top: 30px;
+    background-color: #fff;
+    list-style-type: none;
+}
+
+.ticket-item {
+    padding: 8px 16px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #757575;
+    border-bottom: 1px solid #ddd
+}
+
+.ticket-list .sold-out {
+    display: inline-block;
+    padding: 0 8px;
+    margin-left: 16px;
+    font-size: 15px;
+    list-style: 1.5;
+    background-color: #f44336;
+    text-align: center;
+}
+
+.ticket-list .quantity {
+    float: right;
+    border-radius: 50%;
+    margin-right: 16px;
+    padding: 0 8px;
+    background-color: #000;
 }
 
 
