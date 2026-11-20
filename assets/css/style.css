@@ -359,6 +359,7 @@ h6 {
     max-width: calc(100% - 32px);
     min-height: 200px;
     background-color: #fff;
+    animation: modalFadein ease .4s;
 }
 
 .modal-close {
@@ -450,4 +451,20 @@ h6 {
 
 .modal-help a {
     color: #2196F3;
+}
+
+.modal.open {
+    display: flex;
+}
+
+@keyframes modalFadein {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
