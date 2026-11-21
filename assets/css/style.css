@@ -25,6 +25,28 @@ h6 {
     color: #ffffff !important;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.row {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.col {
+    float: left;
+    padding: 0 8px;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: calc(100% / 3);
+}
+
 /* 
 1. Làm từ trên xuống dưới
 2. Làm từ trong ra ngoài
@@ -218,13 +240,9 @@ h6 {
 #content .member-list {
     width: 100%;
     padding: 32px 0;
-    text-align: center;
     overflow: hidden;
 }
 
-#content .member-item {
-    float: left;
-}
 
 #content .member-name {
     margin: 15px 0;
@@ -259,7 +277,6 @@ h6 {
     font-size: 15px;
     list-style: 1.5;
     background-color: #f44336;
-    text-align: center;
 }
 
 .ticket-list .quantity {
@@ -273,14 +290,9 @@ h6 {
 .place-list {
     padding: 32px 8px;
     overflow: hidden;
-    margin-left: -16px;
-    margin-right: -16px;
 }
 
 .place-item {
-    float: left;
-    width: calc(100% /3);
-    padding: 0 8px;
     margin-bottom: 16px;
 }
 
@@ -382,7 +394,6 @@ h6 {
 
 .modal-header {
     padding: 32px 16px;
-    text-align: center;
     color: #fff;
     background-color: #009688;
 }
@@ -433,7 +444,6 @@ h6 {
 .modal-footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .modal-close-footer {
