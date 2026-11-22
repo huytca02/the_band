@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The band</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="stylesheet"
@@ -22,29 +23,30 @@
   </head>
   <body>
     <div id="main">
-      <div id="header">
+      <header id="header">
         <ul id="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">Band</a></li>
-          <li><a href="">Tour</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#band">Band</a></li>
+          <li><a href="#tour">Tour</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li>
             <a href="#">
               More
               <i class="nav-icon fa-solid fa-caret-down"></i>
             </a>
             <ul class="subnav">
-              <li><a href="">Merchandise</a></li>
-              <li><a href="">Extras</a></li>
-              <li><a href="">Media</a></li>
+              <li><a href="#">Merchandise</a></li>
+              <li><a href="#">Extras</a></li>
+              <li><a href="#">Media</a></li>
             </ul>
           </li>
         </ul>
         <div class="search-btn">
           <i class="search-icon fa-solid fa-magnifying-glass"></i>
         </div>
-      </div>
+      </header>
 
+      <!-- slider -->
       <div id="slider">
         <div class="text-content">
           <h2 class="text-heading">Chicago</h2>
@@ -56,7 +58,7 @@
 
       <div id="content">
         <!-- The band section -->
-        <div class="content-section">
+        <div id="band" class="content-section">
           <h2 class="section-heading">The band</h2>
           <p class="section-sub-heading"><i>We love music</i></p>
           <p class="about-text">
@@ -72,7 +74,7 @@
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.
           </p>
-          <div class="member-list">
+          <div class="row row-un-margin member-list">
             <div class="member-item col col-3 text-center">
               <p class="member-name">Name</p>
               <img
@@ -101,7 +103,7 @@
         </div>
 
         <!-- Tour section -->
-        <div class="tour-section">
+        <div id="tour" class="tour-section">
           <div class="content-section">
             <h2 class="section-heading text-white">TOUR DATES</h2>
             <p class="section-sub-heading text-white">
@@ -136,7 +138,7 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="place-buy-btn js-buy-ticket">
+                  <button class="place-buy-btn js-buy-ticket action-hover">
                     Buy tickets
                   </button>
                 </div>
@@ -153,7 +155,7 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="place-buy-btn js-buy-ticket">
+                  <button class="place-buy-btn js-buy-ticket action-hover">
                     Buy tickets
                   </button>
                 </div>
@@ -170,7 +172,7 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="place-buy-btn js-buy-ticket">
+                  <button class="place-buy-btn js-buy-ticket action-hover">
                     Buy tickets
                   </button>
                 </div>
@@ -179,14 +181,71 @@
           </div>
         </div>
 
-        <div class="content-section">
+        <!-- Contact section -->
+        <div id="contact" class="content-section">
           <h2 class="section-heading">CONTACT</h2>
           <p class="section-sub-heading"><i>Fan? Drop a note!</i></p>
+
+          <div class="row contact-content">
+            <div class="col col-2 contact-info">
+              <p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
+              <p><i class="fa-solid fa-phone"></i>Phone: +00 151515</p>
+              <p><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</p>
+            </div>
+            <div class="col col-2">
+              <form action="" class="contact-form">
+                <div class="row">
+                  <div class="col col-2">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col col-2">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-1">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Message"
+                    />
+                  </div>
+                </div>
+                <button class="contact-btn action-hover">Send</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div id="footer"></div>
+      <!-- map -->
+      <div class="map-section">
+        <img src="./assets/img/map.jpg" alt="map" />
+      </div>
 
+      <!-- footer -->
+      <footer id="footer">
+        <div class="social-list">
+          <a href="#" class="social-item"><i class="social-icon fa-brands fa-square-facebook"></i></a>
+          <a href="#" class="social-item"><i class="social-icon fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-item"><i class="social-icon fa-brands fa-snapchat"></i></a>
+          <a href="#" class="social-item"><i class="social-icon fa-brands fa-pinterest-p"></i></a>
+          <a href="#" class="social-item"><i class="social-icon fa-brands fa-twitter"></i></i></a>
+          <a href="#" class="social-item"><i class="social-icon fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p class="footer-title">Powered by <a href="#">w3.css</a></p>
+      </footer>
+
+      <!-- modal -->
       <div class="modal js-modal">
         <div class="modal-container js-modal-container">
           <div class="modal-close js-modal-close">

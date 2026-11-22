@@ -3,11 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: visible;
+    line-height: 1.5;
 }
 
 html {
     font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -34,9 +35,24 @@ h6 {
     margin-right: -16px;
 }
 
+.row-un-margin {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .col {
     float: left;
     padding: 0 8px;
+}
+
+.col-1 {
+    width: 100%;
 }
 
 .col-2 {
@@ -45,6 +61,12 @@ h6 {
 
 .col-3 {
     width: calc(100% / 3);
+}
+
+.action-hover:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
 }
 
 /* 
@@ -240,7 +262,6 @@ h6 {
 #content .member-list {
     width: 100%;
     padding: 32px 0;
-    overflow: hidden;
 }
 
 
@@ -289,7 +310,6 @@ h6 {
 
 .place-list {
     padding: 32px 8px;
-    overflow: hidden;
 }
 
 .place-item {
@@ -333,11 +353,6 @@ h6 {
     border: none;
 }
 
-.place-buy-btn:hover {
-    background-color: #ccc;
-    color: #000;
-    cursor: pointer;
-}
 
 .place-heading,
 .place-time,
@@ -346,7 +361,81 @@ h6 {
 
 }
 
-#footer {}
+.contact-content {
+    padding: 32px 0;
+}
+
+.contact-info {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.contact-info i[class*="fa-"] {
+    display: inline-block;
+    width: 30px;
+    text-align: left;
+}
+
+.contact-form {}
+
+.contact-form .row {
+    margin-bottom: 8px;
+}
+
+.contact-form input {
+    padding: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.contact-btn {
+    float: right;
+    margin-top: 8px;
+    margin-right: -8px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.map-section {
+    line-height: 0;
+}
+
+.map-section img {
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    opacity: .6;
+    background: #f1f1f1;
+}
+
+#footer a {
+    display: inline-block;
+    color: #000;
+}
+
+#footer a:hover {
+    opacity: .6;
+}
+
+.social-item {
+    width: 24px;
+}
+
+.footer-title {
+    margin: 15px 0;
+    font-size: 15px;
+}
 
 
 .open {
