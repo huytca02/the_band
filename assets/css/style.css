@@ -65,7 +65,7 @@ h6 {
 
 .action-hover:hover {
     background-color: #ccc;
-    color: #000;
+    color: #000 !important;
     cursor: pointer;
 }
 
@@ -166,21 +166,24 @@ h6 {
     margin-left: -4px;
 }
 
-#header .search-icon {
-    color: #fff;
+#header .search-icon,
+#header .mobile-menu-icon {
     line-height: 46px;
 }
 
-#header .search-btn {
+#header .search-btn,
+#header .mobile-menu-btn {
     float: right;
     padding: 0 20px;
     font-size: 15px;
+    color: #fff;
 }
 
 #header .search-btn:hover {
     cursor: pointer;
     background-color: #f44336;
 }
+
 
 #slider {
     position: relative;
@@ -216,7 +219,8 @@ h6 {
 #content {}
 
 #content .content-section {
-    max-width: 800px;
+    width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 16px;
@@ -362,7 +366,7 @@ h6 {
 }
 
 .contact-content {
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 
 .contact-info {

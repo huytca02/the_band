@@ -6,6 +6,7 @@
     <title>The band</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
@@ -43,6 +44,9 @@
         </ul>
         <div class="search-btn">
           <i class="search-icon fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="mobile-menu-btn" class="mobile-menu-btn action-hover">
+          <i class="mobile-menu-icon fa-solid fa-bars"></i>
         </div>
       </header>
 
@@ -318,6 +322,29 @@
       modalContainer.addEventListener("click", function (e) {
         e.stopPropagation();
       });
+
+      // đóng mở mobile menu
+      const header = document.getElementById('header');
+      const mobileMenu = document.getElementById('mobile-menu-btn');
+      const headerHeight = header.clientHeight;
+
+      mobileMenu.onclick = function() {
+        var isClose = header.clientHeight === headerHeight;
+        if(isClose) {
+          header.style.height = 'auto';
+        } else {
+          header.style.height = null;
+        }
+      }
+
+      // Tự động đóng menu
+      const menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+      menuItems.forEach(menuItem => {
+        menuItem.onclick = () => {
+          header.style.height = null;
+        }        
+      });      
+      
     </script>
   </body>
 </html>

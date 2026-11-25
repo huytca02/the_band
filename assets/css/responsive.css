@@ -1,0 +1,21 @@
+/* PC: min-width: 1024px (>=1024px) */
+@media (min-width:1024px) {
+    #header .mobile-menu-btn {
+        display: none;
+    }
+}
+
+/* Mobile: max-width: 740px (< 740px) */
+@media (max-width: 740px) {
+    header {
+        overflow: hidden;
+    }
+
+    #nav li {
+        display: block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+}
