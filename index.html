@@ -25,6 +25,8 @@
   <body>
     <div id="main">
       <header id="header">
+
+        <!-- nav -->
         <ul id="nav">
           <li><a href="#">Home</a></li>
           <li><a href="#band">Band</a></li>
@@ -42,12 +44,17 @@
             </ul>
           </li>
         </ul>
-        <div class="search-btn">
-          <i class="search-icon fa-solid fa-magnifying-glass"></i>
-        </div>
+
+        <!-- mobile menu -->
         <div id="mobile-menu-btn" class="mobile-menu-btn action-hover">
           <i class="mobile-menu-icon fa-solid fa-bars"></i>
         </div>
+
+        <!-- search btn -->
+        <div class="search-btn">
+          <i class="search-icon fa-solid fa-magnifying-glass"></i>
+        </div>
+
       </header>
 
       <!-- slider -->
@@ -340,8 +347,14 @@
       // Tự động đóng menu
       const menuItems = document.querySelectorAll('#nav li a[href*="#"]');
       menuItems.forEach(menuItem => {
-        menuItem.onclick = () => {
-          header.style.height = null;
+        const isParentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
+        
+        menuItem.onclick = (e) => {
+          if(isParentMenu) {
+            e.preventDefault()
+          } else {
+            header.style.height = null;
+          }
         }        
       });      
       
