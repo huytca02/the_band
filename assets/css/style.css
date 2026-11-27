@@ -63,6 +63,14 @@ h6 {
     width: calc(100% / 3);
 }
 
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
 .action-hover:hover {
     background-color: #ccc;
     color: #000 !important;
@@ -266,8 +274,11 @@ h6 {
 .about-text {
     margin: 15px 0;
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
+}
+
+.section-sub-heading {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #content .member-list {
@@ -323,10 +334,6 @@ h6 {
     padding: 32px 8px;
 }
 
-.place-item {
-    margin-bottom: 16px;
-}
-
 .place-img {
     width: 100%;
     display: block;
@@ -341,7 +348,7 @@ h6 {
     padding: 0 16px;
     font-size: 15px;
     background-color: #fff;
-
+    width: 100%;
 }
 
 .place-heading {
@@ -374,21 +381,16 @@ h6 {
 
 .contact-content {
     padding: 32px 16px;
-}
-
-.contact-info {
-    margin-bottom: 16px;
     font-size: 18px;
     line-height: 27px;
 }
+
 
 .contact-info i[class*="fa-"] {
     display: inline-block;
     width: 30px;
     text-align: left;
 }
-
-.contact-form {}
 
 .contact-form .row {
     margin-bottom: 8px;
@@ -401,10 +403,12 @@ h6 {
     width: 100%;
 }
 
+.contact-btn-contain {
+    padding: 0 8px;
+}
+
 .contact-btn {
     float: right;
-    margin-top: 8px;
-    margin-right: -8px;
     padding: 8px 16px;
     text-transform: uppercase;
     background-color: #000;
